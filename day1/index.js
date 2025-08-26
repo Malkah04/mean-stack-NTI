@@ -138,3 +138,9 @@ console.log(q.at(2));
 console.log(q.indexOf(5));
 
 console.log(q.sort((a, b) => b - a));
+
+// a is accumulator and 0 is the initial val for a
+const avg = students.reduce((a, e) => a + e.grades, 0) / students.length;
+console.log(avg);
+
+// module , promise

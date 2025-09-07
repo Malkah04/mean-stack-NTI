@@ -1,0 +1,17 @@
+.header{
+    color :rgb(5, 78, 100);
+}
+.home{
+    display: flex;
+}
+.left{
+    flex: 1;
+    color: orange;
+}
+.right{
+    flex: 1;
+}
+.h{
+    padding-right: 20px;
+
+}

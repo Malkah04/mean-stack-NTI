@@ -1,0 +1,17 @@
+.right{
+    flex: 2;
+    margin-left: 20px;
+}
+.left{
+    flex: 1;
+    
+}
+.home{
+    display: flex;
+    margin: 10;
+    padding: 10;
+}
+.body{
+    margin: 10;
+    padding: 20;
+}

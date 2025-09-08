@@ -1,0 +1,36 @@
+<!-- <p>student works!</p>
+<h3> hello from {{userName}} </h3>
+<h1> {{lastName}} </h1>
+<img [src]="imgSrc" >
+
+<button [disabled]="isDisable"> click me </button>
+
+<button (click)="count()"> count </button>
+<p> {{val}} </p>
+
+
+<input type="text" [(ngModel)]="stdName" >
+
+<p> hello  {{stdName}} </p> -->
+
+<button *ngIf="isLogin">login</button>
+
+<h2> switch example </h2>
+<div [ngSwitch]="role">
+    <p *ngSwitchCase="'admin'"> admin</p>
+    <p *ngSwitchCase="'customer'"> customer</p>
+    <p *ngSwitchDefault="guest"> guest</p>
+
+</div>
+
+
+<button (click)="role='admin'"> login as admin</button>
+<button (click)="role ='customer'"> login as customer</button>
+<button (click)="role='guest'"> login as guest</button>
+
+<ul>
+    <li *ngFor="let std of student"> {{std.id}} - {{std.name}} </li>
+</ul>
+
+
+

@@ -1,0 +1,19 @@
+<img [src]="src" width="100px" height="100px">
+
+<p> {{name}} </p>
+<p> {{email}} </p>
+<p> {{title}} </p>
+
+<button (click)="clik()" > {{!yes? "disable" :"undisable"}} count </button>
+<button [disabled]="yes" (click)="count()" > count </button>
+
+
+<p> the number of time clicked in the button is {{n}} </p>
+
+<input type="text" [(ngModel)]="text">
+<p> {{text}} </p>
+
+<input type="text" [(ngModel)]="iEmail">
+<p> {{iEmail}} </p>
+
+

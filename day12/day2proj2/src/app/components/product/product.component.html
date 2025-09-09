@@ -1,0 +1,12 @@
+<div class="back">
+    <h1 >  {{item.name}} </h1>
+    <h3 class="price"> ${{item.price}} </h3>
+    <p *ngIf="more" >{{item.description}} </p>
+    <h6 style="cursor: pointer; color: rgb(37, 1, 70);" (click)="seeMore()" > {{!more? "see more":"hide discription"}} </h6>
+
+    <div class="button">
+    <button class="btn" (click)="onAddToCart()" >add to cart</button>
+
+    <button class="btn" (click)="deleteItem()" >delete</button>
+    </div>
+</div>

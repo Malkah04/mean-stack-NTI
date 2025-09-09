@@ -1,0 +1,13 @@
+<div class="back">
+<div *ngFor="let p of product"  >
+    <app-product [item]="p" (addToCart)="addprod($event)"  (delete)="deleteProd($event)" ></app-product>
+</div>
+
+</div>
+
+<h2>cart</h2>
+<ul>
+    <li *ngFor="let c of cart">
+        {{c.name}} - {{c.price}}
+    </li>
+</ul>

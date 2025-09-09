@@ -1,0 +1,35 @@
+
+<div style="display: flex; justify-content: center; align-items: center;" >
+    <div class="form" *ngIf="showLogin && !doneLogin">
+        <form  >
+            <input type="text" [(ngModel)]="userName" name="userName" placeholder="user Name">
+            <input type="number" [(ngModel)]="password"  name="password" placeholder="Password">
+        </form>
+
+        <button (click)="login(userName,password)"> login</button>
+        <p class="err"> {{regErr}} </p>
+
+        <p>dont have an account?
+            <a href="#" (click)="toggleForm($event)">Register here</a>
+        </p>
+    </div>
+
+<div class="form"  *ngIf="!showLogin && !doneLogin">
+        <form >
+            <input type="text" [(ngModel)]="userName" name="userName" placeholder="user Name">
+            <input type="text" [(ngModel)]="password" name="password"  placeholder="Password">
+        </form>
+
+        <button (click)="register(userName ,password)">register</button>
+        <p class="err"> {{regErr}} </p>
+
+        <p>do you have an account? 
+            <a href="#" (click)="toggleForm($event)">Login here</a>
+        </p>
+</div>
+
+<div *ngIf="doneLogin">
+    <app-products></app-products>
+</div>
+</div>
+

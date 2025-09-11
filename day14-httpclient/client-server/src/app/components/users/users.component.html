@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let u of user"> {{u.username}} -{{u.email}}
+    <button (click)="deleteUser(u.id)">delete </button>
+     </li>
+</ul>
